@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 25px;
+}
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  background: #eee;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: #222;
+  font-size: 14px;
+  line-height: 26px;
+  padding-bottom: 50px;
+}
+
+.container {
+  max-width: 750px;
+  background: #fff;
+  margin: 0px auto 0px;
+  box-shadow: 1px 1px 2px #dad7d7;
+  border-radius: 3px;
+  padding: 40px;
+  margin-top: 50px;
+}
+
+.header {
+  margin-bottom: 10px;
+}
+
+.full-name {
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.first-name {
+  font-weight: 700;
+}
+
+.last-name {
+  font-weight: 300;
+}
+
+.contact-info {
+  margin-bottom: 20px;
+}
+
+.phone,
+.email,
+.portfolio,
+.location {
+  color: #999;
+  font-weight: 300;
+}
+
+.separator {
+  height: 10px;
+  display: inline-block;
+  border-left: 2px solid #999;
+  margin: 0px 10px;
+}
+
+.position {
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 10px;
+  text-decoration: underline;
+}
+
+.about .desc {
+  margin-top: 10px;
+}
+
+.details {
+  line-height: 20px;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.section:last-of-type {
+  margin-bottom: 0px;
+}
+
+.section__title {
+  letter-spacing: 1px;
+  color: #54afe4;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+.section__list-item {
+  margin-bottom: 10px; /* Adjust spacing between items */
+}
+
+.section__list-item:last-of-type {
+  margin-bottom: 0;
+}
+
+.left,
+.right {
+  vertical-align: top;
+  display: inline-block;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.left {
+  width: calc(
+    95% - 20px
+  ); /* Subtracting 20px (10px padding on each side) from the width */
+  padding: 0 10px; /* Adjust padding */
+}
+
+.right {
+  text-align: right;
+  width: calc(
+    39% - 20px
+  ); /* Subtracting 20px (10px padding on each side) from the width */
+  padding: 0 10px; /* Adjust padding */
+}
+
+.name {
+  font-weight: bolder;
+  font-size: 16px;
+  color: rgb(51, 51, 51);
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-style: italic;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+.skills__item {
+  margin-bottom: 20px; /* Adjust spacing between skills */
+}
+
+.skills__item .name {
+  font-weight: bold;
+  margin-bottom: 5px; /* Adjust spacing between skill name and skill items */
+}
+
+.skills__item div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills__item label {
+  display: inline-block;
+  padding: 8px 12px; /* Adjust padding to control the size of the box */
+  margin-right: 10px; /* Adjust margin to control the space between boxes */
+  margin-bottom: 10px; /* Adjust margin to control the space between boxes */
+  background-color: #54afe4; /* Adjust background color of the box */
+  color: #fff; /* Adjust text color */
+  border-radius: 5px; /* Adjust border radius to control the roundness of the box */
+}
+
+.section__list-item .link a {
+  color: #54afe4;
+}
+
+.section__list-item .left {
+  text-align: justify;
+}
+
+.tick-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.tick-list li {
+  position: relative;
+  padding-left: 20px; /* Adjust as needed */
+}
+
+.tick-list li::before {
+  content: "\2713"; /* Unicode character for checkmark */
+  position: absolute;
+  left: 0;
+}
+
+/* CSS for Contact Info */
+.contact-info {
+  margin-bottom: 0.5px;
+  margin-top: 20px;
+}
+
+.phone a,
+.email a,
+.location {
+  color: #000000;
+  font-weight: 300;
+  padding: 0px;
+  margin: 0.01px;
+  font-size: 15px;
+}
+
+.phone a:hover,
+.email a:hover,
+.location:hover {
+  color: #54afe4;
+}
+
+.separator {
+  height: 10px;
+  display: inline-block;
+  border-left: 2px solid #999;
+  margin: 0px 5px;
+}
+
+/* CSS for Portfolio Link */
+.portfolio a {
+  color: #000000;
+}
+
+.portfolio a:hover {
+  text-decoration: underline;
+  color: #54afe4;
+}
+
+.section_list {
+  display: flex;
+}
+
+.section_list-item {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  margin-right: 20px; /* Adjust spacing between items */
+}
+
+.section_list-item i {
+  margin-right: 5px; /* Adjust spacing between icon and text */
+}
+.section__list-item .left .duration {
+  font-weight: bold;
+  color: #54afe4;
+  text-decoration: underline;
+}
+
+.duration a {
+  font-weight: bold;
+  color: #54afe4;
+  text-decoration: underline;
+  font-style: normal;
+}
